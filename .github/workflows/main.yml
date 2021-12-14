@@ -29,11 +29,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ~/.npm
-        key: ${
-    {
-     runner.os }}-node-${
-    {
-     hashFiles('**/package-lock.json') }}
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install hexo dependencies
       # 下载 hexo-cli 脚手架及相关安装包
@@ -65,9 +61,6 @@ jobs:
         git config user.email "564645255@qq.com"
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://${
-    { secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master
-        git push --force --quiet "https://UxMBprfrUW:${
-    { secrets.CODING_TOKEN }}@$CODING_REPO" master:master
-        git push --force --quiet "https://weisiyi:${
-    { secrets.GITEE_ACCESS_TOKEN }}@$GITEE_REPO" master:master
+        git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master
+        git push --force --quiet "https://UxMBprfrUW:${{ secrets.CODING_TOKEN }}@$CODING_REPO" master:master
+        git push --force --quiet "https://weisiyi:${{ secrets.GITEE_ACCESS_TOKEN }}@$GITEE_REPO" master:master
