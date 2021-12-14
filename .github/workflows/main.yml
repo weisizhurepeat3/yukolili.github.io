@@ -43,8 +43,10 @@ jobs:
         hexo clean
         hexo generate
 
-    - name: Hexo Gulp Action
-      uses: alterhu2020/hexo-gulp-action@v1.0.6
+
+    - name: Gulp Runner
+      uses: 2KAbhishek/gulp-runner@v0.3
+
 
     # - name: Execute gulp task
     #   run: gulp
