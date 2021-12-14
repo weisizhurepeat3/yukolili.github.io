@@ -7,7 +7,7 @@ on:
       - hexo
 
 env:
-  TZ: Asia/Beijing
+  TZ: Asia/Shanghai
 
 jobs:
   blog-cicd:
@@ -53,7 +53,7 @@ jobs:
         # Coding 仓库
         CODING_REPO: e.coding.net/yukolili/blogs.git
         # Gitee 仓库
-        GITEE_REPO: gitee.com/yukolili/yukolili.gitee.io
+        # GITEE_REPO: gitee.com/weisiyi/weisiyi.gitee.io
       # 将编译后的博客文件推送到指定仓库
       run: |
         cd ./public && git init && git add .
@@ -63,4 +63,3 @@ jobs:
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
         git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master
         git push --force --quiet "https://UxMBprfrUW:${{ secrets.CODING_TOKEN }}@$CODING_REPO" master:master
-        git push --force --quiet "https://weisiyi:${{ secrets.GITEE_ACCESS_TOKEN }}@$GITEE_REPO" master:master
