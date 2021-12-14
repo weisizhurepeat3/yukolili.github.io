@@ -12,7 +12,7 @@ env:
 jobs:
   blog-cicd:
     name: Hexo blog build & deploy
-    runs-on: macOS-latest # 使用最新的 Ubuntu 系统作为编译部署的环境
+    runs-on: macOS-latest # 使用最新的 macOS系统作为编译部署的环境
 
     steps:
     - name: Checkout codes
@@ -22,7 +22,7 @@ jobs:
       # 设置 node.js 环境
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
+        node-version: '16.x'
 
     - name: Cache node modules
       # 设置包缓存目录，避免每次下载
