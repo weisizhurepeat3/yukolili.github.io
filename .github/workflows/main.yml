@@ -12,7 +12,7 @@ env:
 jobs:
   blog-cicd:
     name: Hexo blog build & deploy
-    runs-on: macOS-latest # 使用最新的 macOS系统作为编译部署的环境
+    runs-on: macOS-11 # 使用最新的 macOS系统作为编译部署的环境
 
     steps:
     - name: Checkout codes
@@ -44,7 +44,7 @@ jobs:
         hexo generate
 
     - name: Execute gulp task
-      run: gulp
+      run: npm run gulp
 
     - name: Deploy hexo blog
       env: 
