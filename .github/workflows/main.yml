@@ -43,8 +43,11 @@ jobs:
         hexo clean
         hexo generate
 
-    - name: Execute gulp task
-      run: npm run gulp
+    - name: Hexo Gulp Action
+      uses: alterhu2020/hexo-gulp-action@v1.0.6
+
+    # - name: Execute gulp task
+    #   run: gulp
 
     - name: Deploy hexo blog
       env: 
