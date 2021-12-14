@@ -48,8 +48,8 @@ jobs:
       uses: 2KAbhishek/gulp-runner@v0.3
 
 
-    # - name: Execute gulp task
-    #   run: gulp
+    - name: Execute gulp task
+      run: gulp
 
     - name: Deploy hexo blog
       env: 
