@@ -84,7 +84,7 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/polar-bear.svg
+favicon: /img/polar-bear.png
 
 # Avatar (頭像)
 avatar:
@@ -182,10 +182,10 @@ post_copyright:
 reward:
   enable: false
   QR_code:
-    - img: /img/wechat.jpg
+    - img: /img/wechat.jpeg
       link:
       text: wechat
-    - img: /img/alipay.jpg
+    - img: /img/alipay.jpeg
       link:
       text: alipay
 
