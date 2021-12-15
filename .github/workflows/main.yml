@@ -51,8 +51,7 @@ jobs:
       env: 
         # Github 仓库地址
         GITHUB_REPO: github.com/yukolili/yukolili.github.io
-        # Coding 仓库地址
-        CODING_REPO: e.coding.net/yukolili/blogs.git
+
       # 将编译后的博客文件推送到指定仓库
       run: |
         cd ./public && git init && git add .
@@ -61,4 +60,3 @@ jobs:
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
         git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master
-        git push --force --quiet "https://UxMBprfrUW:${{ secrets.CODING_TOKEN }}@$CODING_REPO" master:master
