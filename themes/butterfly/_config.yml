@@ -22,7 +22,7 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light # default / darker / pale night / light / ocean / mac / false
+highlight_theme: mac light # default / darker / pale night / light / ocean / mac / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -32,7 +32,7 @@ code_word_wrap: false
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
   enable: true
-  copyright: false
+  copyright: true
 
 # social settings (社交圖標設置)
 # formal:
@@ -88,7 +88,7 @@ favicon: /img/polar-bear.png
 
 # Avatar (頭像)
 avatar:
-  img: /img/avatar.png
+  img: /img/polar_bear.png
   effect: false
 
 # the banner image of home page
@@ -192,11 +192,11 @@ reward:
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 3 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -356,7 +356,7 @@ gitter:
 
 since: 2020
 
-footer_custom_text: weisizhurepeat3@163.com
+footer_custom_text: Hi, welcome to contact me at <a href="https://yukolili.github.io/">weisizhurepeat3@163.com</a>!
 
 footer_copyright: false
 
