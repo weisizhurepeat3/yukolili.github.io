@@ -36,5 +36,8 @@
     "hexo-renderer-stylus": "^2.0.1",
     "hexo-server": "^2.0.0",
     "hexo-theme-butterfly": "^3.8.4"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
