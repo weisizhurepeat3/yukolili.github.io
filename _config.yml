@@ -98,8 +98,11 @@ theme: butterfly-reloaded
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
+
   type: git
+  
   repository: git@github.com:yukolili/yukolili.github.io.git
+  
   branch: master
 
 # Music
